@@ -11,7 +11,8 @@ pipeline {
 		 steps{
 			script {
 				docker.build hello-world-jenkins + ":$BUILD_NUMBER"
+				}
 			}
-        }
-    }
+		}
+	}
 }
