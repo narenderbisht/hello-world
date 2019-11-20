@@ -10,7 +10,7 @@ pipeline {
 		stage('docker-image-creation') { 
 		 steps{
 			script {
-				docker.build hello-world-jenkins + ":$BUILD_NUMBER"
+				docker.build("hello-world-jenkins:${BUILD_NUMBER}")
 				}
 			}
 		}
