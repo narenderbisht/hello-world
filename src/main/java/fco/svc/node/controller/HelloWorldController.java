@@ -29,7 +29,7 @@ public class HelloWorldController{
 	
 	@GetMapping("/hello")
 	public Mono<String> sayHello(ServerHttpRequest request) {
-				return Mono.just("Hello World:"+param);
+				return Mono.just("Hello World updated:"+param);
 		
 	}
 	
